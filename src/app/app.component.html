@@ -1,4 +1,4 @@
-<mat-toolbar>
+<!--<mat-toolbar>
   <mat-toolbar-row>
     <button mat-button (click)="opened=!opened">
       <mat-icon style="align-items:center ;">menu</mat-icon>
@@ -71,6 +71,133 @@
         </div>
         <h1>The Crome extension will also collect data from Amazon's Wish lists, seller, sellerstore front and buying
           guide</h1>
+
+
+      </div>
+    </section>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>-->
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened">
+    <div class="profile">
+      <img src="assets/dp.png">
+      <h3 style="font-family: poppins;">Hello, Surya</h3>
+      <button (click)="opened=!opened"
+        style="left: 377px; background-color:white; border: white; position: absolute; top: 28px; font-size: 30px; height: 22px; width: 22px;">
+        <i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <hr style="position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 57px;
+    
+    border: 1px solid #AEAEAE;">
+
+    <mat-nav-list style="padding-top: 80px; padding-left:10px; ">
+      <mat-list-item style="height:32px ; ">
+        <img src="assets/note.png" style="
+        width: 20px;
+        height: 20px;
+        left: 45px;
+        top: 108px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins;">Customize View</span>
+        <i class="fa-solid fa-arrow-right" style="padding-left: 52%;"></i>
+      </mat-list-item>
+
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/filter.png" style="width: 24px;
+        height: 24px;
+        left: 45px;
+        top: 108px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Filter Results</span>
+        <i class="fa-solid fa-arrow-right" style="padding-left: 59%;"></i>
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/download (1).png" style="left:45px ; height: 20px; width: 20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Download CSV</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/keyword.png" style="left: 45px; height: 20px; width: 20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Keyword Cloud</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/trend.png" style=" height: 15px; width: 15px; margin: 1%;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Search Trends</span>
+
+      </mat-list-item>
+      <mat-list-item style="height:32px ;">
+
+        <img src="assets/screenshot.png" style="height: 20px; width:20px;">
+        <span style="color: black ; font-size: 15px; font-family: poppins; ">Download Screenshot</span>
+
+      </mat-list-item>
+      <div class="bottom" style="bottom:0; position: absolute; padding-bottom:25px ;">
+        <hr style="margin-top: 5px; border:1px solid #AEAEAE; width: 100%;">
+        <mat-list-item style="height:32px ;">
+          <img src="assets/help.png" style=" width: 22px; height: 22px;"> <span
+            style="color:black ; font-size: 15px;">Help</span>
+          <i class="fa-solid fa-arrow-right" style="padding-left:260px"></i>
+        </mat-list-item>
+        <mat-list-item style="height:32px ;">
+          <img src="assets/settings (1).png" style="width: 22px; height: 22px;">
+          <span style="color:black ; font-size: 15px;">Account Settings</span>
+          <i class="fa-solid fa-arrow-right" style="padding-left: 178px;"></i>
+        </mat-list-item>
+        <mat-list-item style="height:32px ;">
+          <img src="assets/logout.png" style="width: 22px; height: 22px;">
+          <span style="color:black ; font-size: 15px;">Log Out</span>
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+    <mat-toolbar style="background-color: #003167; width: 100%;">
+      <button (click)=" opened=!opened"
+        style="color: white; background-color: #003167 ; border: #003167; font-family: poppins;"> <i class="fa fa-bars"
+          aria-hidden="true"></i>
+        Menu
+      </button>
+      <img src="assets/icon.png" style="padding-left: 40% ; height:55px;  ">
+      <i class="fa-solid fa-arrow-rotate-right"
+        style="padding-left:43% ; margin:1%; font-size: 25px; color: white;"></i>
+      <i class="fa-solid fa-xmark" style="font-size: 30px; color:white;"></i>
+    </mat-toolbar>
+    <section class="facilities">
+      <h1 style="font-size:50px ; font-weight:500; font-family: poppins;">There's is nothing to Display </h1>
+      <p style="font-size: 18px ; font-family: poppins;">The Chrome Extension can only display data for specific Amazon
+        pages.
+        Why not <br>Perform a search on one of the
+        pages listed below.</p>
+      <div class="row">
+        <div class="facilities-col" style="font-family: poppins;">
+          <img src="assets/img1.png">
+          <h3 style="font-family: poppins;">1.Amazon Search Results</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum maiores cupiditate deserunt tempora
+            consequuntur. Repudiandae dolor placeat velit exercitationem, commodi minus hic perspiciatis fugiat
+            doloribus incidunt, quos molestias corrupti expedita.</p>
+        </div>
+        <div class="facilities-col" style="font-family: poppins;">
+          <img src="assets/img2.png">
+          <h3 style="font-family: poppins;">2.Amazon Product listings</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, pariatur? Quod obcaecati voluptatibus
+            odit tempore optio necessitatibus, error quibusdam sequi maiores illo ab quae, totam asperiores aut nostrum
+            magnam. Quidem.</p>
+        </div>
+        <h1 style="font-family:poppins ;left: 50px;
+        top: 650px; position:absolute">The Crome extension will also collect data from <b>Amazon's Wish lists,
+            seller,</b><br>
+          <b> sellerstore </b>front and <b>buying
+            guide</b>
+        </h1>
 
 
       </div>
